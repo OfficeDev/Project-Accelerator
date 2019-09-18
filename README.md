@@ -3,7 +3,6 @@ page_type: sample
 products:
   - office-project
 description: An Issues model that integrates with Project on CDS
-urlFragment: update-this-to-unique-url-stub
 languages:
   - powerapps
 ---
