@@ -2,7 +2,7 @@
 page_type: sample
 products:
   - office-project
-description: An Issues model that integrates with Project on CDS
+description: An Accelerator solution for Project for the web
 languages:
   - powerapps
 ---
