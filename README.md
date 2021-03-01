@@ -37,7 +37,7 @@ This repository also contains a Power BI template that can be deployed alongside
 | `Project for the web Accelerator <version>.zip` | The Project for the web Accelerator |
 | `Project for the web template.pbit`                  | Power BI template for use with the Accelerator |
 
-_NOTE: The program management and business case scenarios are impacted by a critical bug in Project for the web. Until that bug is fixed, projects cannot be parented to programs and projects cannot be given business cases. We are working on a fix that will be available soon._
+_NOTE: The program management and business case scenarios are impacted by a critical bug in Project for the web. Until that bug is fixed, existing projects cannot be parented to programs and existing projects cannot be given business cases. We are working on a fix that will be available soon._
 
 ## Deploying the solution
 
