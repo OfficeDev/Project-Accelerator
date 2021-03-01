@@ -113,7 +113,6 @@ The Accelerator already contains a placeholder for the Power BI template. Once y
 
 11. Delete the all the content in that text box and paste in the code snipped below. Replace the text between quotes `REPLACE THIS` with the link from step 3 that you created in the PowerBI.com site. Be sure to keep the quotes!
 
----
 ```
   <html>
     <head>
@@ -123,10 +122,9 @@ The Accelerator already contains a placeholder for the Power BI template. Once y
     </body>
   </html>
 ```
----
 
-12. Press *OK* to save the changes and close the dialog.
-13. Press the *Save* button and then the *Publish all customizations* button to have the changes made. Once published, you can close the browser tabs.
+1.  Press *OK* to save the changes and close the dialog.
+2.  Press the *Save* button and then the *Publish all customizations* button to have the changes made. Once published, you can close the browser tabs.
 
 ![Save and Publish buttons](save-changes-for-reports.png)
 
