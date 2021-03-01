@@ -7,61 +7,99 @@ languages:
   - powerapps
 ---
 
-# Issues Model for Project on Dynamics
+# Project for the web Accelerator
 
-Project stores data in the Common Data service. Now, developing apps that extend Microsoft Project is easier than it has ever been before.
+_NOTE: The content in this site is not a supported release of Microsoft software._
 
-This repository contains an [unmanaged solution](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/introduction-solutions) with an Issues model. You are encouraged to edit it, reuse it, and provide feedback about it. Depending upon the kinds of changes you suggest, I will incorporate them into the model. There are two goals for the content in this repository.
+The Project for the web Accelerator is applies useful customizations to the Project for the web Power App. The Accelerator can _easily_ be deployed to any environment that has Project for the web already in it. Scenarios included in the Accelerator are...
 
-**Primary goal:** Give an example for how you can extend Project and package a solution.
+💡 **Project Requests**. Create a list of ideas for Projects that include a business case and expected impact. Pro-tip: Create an Approvals flow using Power Automate to convert Project Requests into Projects.
 
-**Aspirational goal:** Iterate on a simple base to develop a best-in-class Issues model that can be reused and repurposed for other scenarios.
+💼 **Programs**. Create a heirarchy of programs and projects see how work fits into the bigger picture.
 
-*NOTE: The content in this repo is not part of a supported release of Microsoft software; it is managed by me. However, I will reply to issues and integrate pull requests when I think they help to further the two goals of this repository.*
+🔥 **Risks and Issues**. Manage the surprises that accompany every project. Create and assign risks and issues to minimize impacts to a project's schedule.
 
-## Contents of this Repository
+🚧 **Changes**. Use change tracking processes to help understand the history of a project.
 
-What you'll find in this repository.
+📝 **Status**. Centralize recording of project status to keep stakeholders up-to-date.
 
-| File/folder           | Description                                |
-|-----------------------|--------------------------------------------|
-| `.gitignore`          | Define what to ignore at commit time.      |
-| `CONTRIBUTING.md`     | Guidelines for contributing to the sample. |
-| `CHANGELOG.md`        | List of changes to the sample.             |
-| `README.md`           | This README file.                          |
-| `LICENSE`             | The license for the sample.                |
-| `Issues <version>.zip`| The Issues solution                        |
+The Project Accelerator is completely customizable. If something is missing: add it! Sign into [PowerApps](https://make.powerapps.com) to make additional customizations to the Project Power App.
 
-## Contents of the `Issues` solution
+This repository also contains a Power BI template that can be deployed alongside the Accelerator. For the best experience, deploy the Accelerator, deploy the Power BI content pack, and then customize the Accelerator to use the deployed Power BI content pack. **Follow the instructions below to get started!**
 
-The contents right now are pretty basic.
+## Contents of this GitHub Repository
 
-1. The Issues entity
-1. Relationships between Tasks and Projects
+| File                                                 | Description                                              |
+| ---------------------------------------------------- | -------------------------------------------------------- |
+| `README.md`                                          | This README file.                                        |
+| `Project for the web Accelerator Full <version>.zip` | Accelerator *without* Programs and Business Case       |
+| `Project for the web Accelerator Full <version>.zip` | Accelerator that includes Programs and Business Case |
+| `Project for the web template.pbit`                  | Power BI template for use with the Accelerator |
 
-The list of contents will expand based on your feedback and any code contributions you make 😊.
-
-## Prerequisites
-
-You'll need a few things to deploy this solution.
-
-1. A license to Project Pro or Project Premium
-1. A Dynamics org with the new Project solution deployed to it.
-1. Permissions to deploy solutions in the Default Dynamics org.
-1. If you are also planning on developing Power Apps using this solution, you'll also need a Power Apps license.
+_NOTE: The program management and business case scenarios are impacted by a critical bug in Project for the web. Until that bug is fixed, projects cannot be parented to programs and projects cannot be given business cases. We are working on a fix that will be available soon. Until then, deploy the Lite version of the Accelerator to remove those scenarios._
 
 ## Deploying the solution
 
-There are a few different ways that you can deploy a solution on Dynamics. You can learn more about them [here](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/introduction-solutions). The one that I'll focus on is deploying via [powerapps.com](https://powerapps.com). 
+### Prerequisites
 
-1. Download the `Issues <version>.zip` from this repo.
-1. Sign into [powerapps.com](https://powerapps.com).
-1. In the top header, in the "environment" section, select the Default environment (This is where we deployed the new Project Service).
-1. On the left navigation, click the "solutions" link.
-1. You should see a list of the solutions in the default org. Now click on the "Import" button along the top nav of this page
-1. In the popup, press the "choose file" button and navigate to the local directory where you downloaded the `Issues <version>.zip` file.
-1. Press the "next" button and then "import" to begin importing the solution. This will take a few minutes.
-1. Once that is done, you'll be able to close the pop-up, and you should now see the "Issues" solution in the list of solutions. If you don't see the Issues solution, ensure that "all" solutions are shown, by clicking on the filter button on the top-right of the list of solutions.
+* An environment with the Project Solution in it. [Learn more about deploying Project](https://docs.microsoft.com/project-for-the-web/deploying-project).
+*  Admin rights to the environment
+*   Rights to create Power Automate flows using the Common Data Service connector.
+*   A local copy of either the [Full](Project%20for%20the%20web%20Accelerator%20Full%20v1_6_0_12.zip) or [Lite](Project%20for%20the%20web%20Accelerator%20Lite_v1_6_0_11.zip) version of the Accelerator. You don't need to unzip the solution file.
+
+### Instructions
+
+1. Sign into [powerapps.com](https://make.powerapps.com).
+2. In the top header, open the *Environment* menu and select the environment you have the Project solution installed in.
+3. On the left navigation, click the *Solutions* menu item.
+4. Click on the *Import* button in the top menu bar of this page.
+5. In the popup, press the *choose file* button and navigate to the local directory where you downloaded the `Accelerator` zip file.
+6. Press *next*, and select an existing connection to a Power Automate flow or create a new one.
+7. Press the *next* button and then *import* to begin importing the solution. This will take several minutes, so grab a coffee ☕.
+
+**Once this has been completed you're done deploying the solution!**
+
+The Project Power App in this environment will look similar to the screenshot below. If you want to make a change, you can deploy a managed solution with additional changes, or edit the Project Power App yourself in [PowerApps.com](https://make.powerapps.com).
+
+ ![Project Power App with Accelerator](project-with-the-accelerator.png)
+
+## Deploying the Power BI template
+
+### Prerequisites
+
+* An environment with Project for the web and the Project Accelerator in it.
+* The appropriate privileges to deploy the Power BI content pack to powerbi.com.
+* Admin rights to modify the Project Power App so that you can add the content pack to it.
+
+### Instructions to deploy the Power BI template
+1. Download the [Power BI template](Project%20for%20the%20Web%20Accelerator%20report.pbit) for the Accelerator.
+2. Deploy it using Power BI Desktop or in the [PowerBI.com service](https://www.powerbi.com).
+3. When prompted for the environment url, use the base url of your environment. For example: `https://myenvironment.crm.dynamics.com`
+
+### Instructions to modify the Project Accelerator to use the deployed template
+The Accelerator already contains a placeholder for the Power BI template. Once you've deployed the Accelerator and the Power BI template, follow these steps to have the Power BI report appear in the Accelerator.
+
+1. Sign into [powerapps.com](https://make.powerapps.com).
+2. In the top header, open the *Environment* menu and select the environment you have the Project solution installed in.
+3. On the left navigation, click the *Solutions* menu item.
+4. Click the *Project for the web Accelerator* solution name to open the solution.
+5. Click the *Reports* item. It has the name *proj_Reports* and is of type *Customization.Type_WebResource*.
+6. 
+
+## License Requirements
+
+The Accelerator solution and Power BI template are distributed free of charge under the MIT license.
+However, using them in your environments to work with *Project for the web* has certain licensing implications.
+
+### Using the Accelerator without the Power BI content pack (INCOMPLETE)
+
+If you just deploy the Accelerator without the Power BI content pack, users will need the following licenses.
+
+Making full use of all the customizations requires a Project Plan 3 license. This applies to your project managers who also need to do things like organize programs, track issues and risks, manage the business case and financials, or edit the custom columns such as corporate sponsor of the project.
+
+Users who are only creating and managing tasks need a Project Plan 1 license.
+
+Refer to the [Project Service Description](https://docs.microsoft.com/office365/servicedescriptions/project-online-service-description/project-online-service-description) for details about Project licensing.
 
 ## Contributing
 
