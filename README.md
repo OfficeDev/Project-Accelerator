@@ -8,9 +8,16 @@ languages:
   - Power BI
 ---
 
+---
+
+### NOTE: The Project Accelerator only receives limited support. However, it is completely customizable. If something is missing: add it! Sign into [PowerApps](https://make.powerapps.com) to make additional customizations to the Project Power App.
+
+---
+
+
 # Project for the web Accelerator
 
-_NOTE: The content in this site is not a supported release of Microsoft software._
+
 
 The Project for the web Accelerator applies useful customizations to the Project for the web Power App. The Accelerator can _easily_ be deployed to any environment that has Project for the web already in it. Scenarios included in the Accelerator are...
 
@@ -24,9 +31,14 @@ The Project for the web Accelerator applies useful customizations to the Project
 
 📝 **Status**. Centralize recording of project status to keep stakeholders up-to-date.
 
-The Project Accelerator is completely customizable. If something is missing: add it! Sign into [PowerApps](https://make.powerapps.com) to make additional customizations to the Project Power App.
 
 This repository also contains a Power BI template that can be deployed alongside the Accelerator. For the best experience, deploy the Accelerator, then deploy the Power BI content pack, and finally, customize the Accelerator to use the deployed Power BI report. **Follow the instructions below to get started!**
+
+---
+### [Here's the latest version of the Accelerator](Project_for_the_web_Accelerator%20v1_6_0_18.zip)
+
+### [Here's the latest version of the Power BI Template for the Accelerator](Project%20for%20the%20Web%20Accelerator%20report.pbit)
+---
 
 ## Contents of this GitHub Repository
 
@@ -46,7 +58,7 @@ _NOTE: The program management and business case scenarios are impacted by a crit
 * An environment with the Project for the web solution in it. [Learn more about deploying Project](https://docs.microsoft.com/project-for-the-web/deploying-project).
 *  Admin rights to the environment
 *   Rights to create Power Automate flows using the Common Data Service connector.
-*   A local copy of the [Accelerator](Project%20for%20the%20web%20Accelerator%20Full%20v1_6_0_12.zip). You don't need to unzip the solution file.
+*   A local copy of the [Accelerator](Project_for_the_web_Accelerator%20v1_6_0_18.zip). You don't need to unzip the solution file.
 
 ### Instructions
 
@@ -62,7 +74,7 @@ _NOTE: The program management and business case scenarios are impacted by a crit
 
 The Project Power App in this environment will look similar to the screenshot below. If you want to make a change, you can deploy a managed solution with additional changes, or edit the Project Power App yourself in [PowerApps.com](https://make.powerapps.com).
 
- ![Project Power App with Accelerator](project-with-the-accelerator.png)
+ ![Project Power App with Accelerator](images/project-with-the-accelerator.png)
 
 ## Deploying the Power BI template
 
@@ -85,30 +97,30 @@ The Accelerator already contains a placeholder for the Power BI template. Once y
 1. Once you've deployed the Power BI template, open the report in [PowerBI.com](https://www.powerbi.com).
 2. Press the *Share* button in the top navigation bar, open the *Embed report* menu item, and then choose the *Website or portal* option.
 
-![The website or portal menu option under the share button](share-powerbi-report.png)
+![The website or portal menu option under the share button](images/share-powerbi-report.png)
 
 1. Copy the link in the top box ("Here's a link you can use to embed content") and keep it handy.
 
-![Embed link](reports-link-code.png)
+![Embed link](images/reports-link-code.png)
 
 4. In a new browser tab, sign into [powerapps.com](https://make.powerapps.com).
 5. In the top header, open the *Environment* menu and select the environment you have the Project solution installed in.
 6. On the left navigation, click the *Solutions* menu item.
 7. Click the *Project for the web Accelerator* solution name to open the solution.
   
-![Project for the web Accelerator solution](solution-title.png)
+![Project for the web Accelerator solution](images/solution-title.png)
 
 8. Click the *Reports* item. It has the name *proj_Reports* and is of type *Customization.Type_WebResource*.
 
-![Reports item in the solution](reports-item.png)
+![Reports item in the solution](images/reports-item.png)
 
 9. In the new tab that opens, click the *Text Editor* button in the *Content* section of the page.
 
-![Reports text editor](reports-text-editor.png)
+![Reports text editor](images/reports-text-editor.png)
 
 10. Switch to the *Source* tab in the dialog that appears.
 
-![Source Tab](source-tab-button.png)
+![Source Tab](images/source-tab-button.png)
 
 11. Delete the all the content in that text box and paste in the code snipped below. Replace the text between quotes `REPLACE THIS` with the link from step 3 that you created in the PowerBI.com site. Be sure to keep the quotes!
 
@@ -125,11 +137,11 @@ The Accelerator already contains a placeholder for the Power BI template. Once y
 1.  Press *OK* to save the changes and close the dialog.
 2.  Press the *Save* button and then the *Publish all customizations* button to have the changes made. Once published, you can close the browser tabs.
 
-![Save and Publish buttons](save-changes-for-reports.png)
+![Save and Publish buttons](images/save-changes-for-reports.png)
 
 **You can now view the Power BI report within the Accelerator! Just open the Reports link in the left navigation of the Project Power App**
 
-![Power BI reports in the Project Power App](powerbi-in-app.png)
+![Power BI reports in the Project Power App](images/powerbi-in-app.png)
 
 
 ## Licensing
