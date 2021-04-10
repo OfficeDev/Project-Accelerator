@@ -26,7 +26,7 @@ This repository also contains a Power BI template that can be deployed alongside
 
 ---
 
-### [Here's the latest version of the Accelerator](Project_for_the_web_Accelerator%20v1_6_0_18.zip)
+### [Here's the latest version of the Accelerator](Project_for_the_web_Accelerator%20v1_6_0_19.zip)
 
 ### [Here's the latest version of the Power BI Template for the Accelerator](Project%20for%20the%20Web%20Accelerator%20report.pbit)
 
@@ -41,7 +41,6 @@ This repository also contains a Power BI template that can be deployed alongside
 | `Project for the web Accelerator <version>.zip` | The Project for the web Accelerator                                                                         |
 | `Project for the web template.pbit`             | Power BI template for use with the Accelerator                                                              |
 
-_NOTE: The program management and business case scenarios are impacted by a critical bug in Project for the web. Until that bug is fixed, existing projects cannot be parented to programs and existing projects cannot be given business cases. We are working on a fix that will be available soon._
 
 ## Deploying the solution
 
@@ -50,7 +49,7 @@ _NOTE: The program management and business case scenarios are impacted by a crit
 - An environment with the Project for the web solution in it. [Learn more about deploying Project](https://docs.microsoft.com/project-for-the-web/deploying-project).
 - Admin rights to the environment
 - Rights to create Power Automate flows using the Common Data Service connector.
-- A local copy of the [Accelerator](Project_for_the_web_Accelerator%20v1_6_0_18.zip). You don't need to unzip the solution file.
+- A local copy of the [Accelerator](Project_for_the_web_Accelerator%20v1_6_0_19.zip). You don't need to unzip the solution file.
 
 ### Instructions
 
