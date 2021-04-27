@@ -26,7 +26,7 @@ This repository also contains a Power BI template that can be deployed alongside
 
 ---
 
-### [Here's the latest version of the Accelerator](releases/Project_for_the_web_Accelerator_v1_7_0_3.zip)
+### [Here's the latest version of the Accelerator](https://github.com/BeReasonable/Project-Accelerator/raw/main/releases/Project_for_the_web_Accelerator_v1_7_0_3.zip)
 ### [Here's the latest version of the Power BI Template for the Accelerator](Project%20for%20the%20Web%20Accelerator%20report.pbit)
 
 ---
@@ -50,7 +50,7 @@ This repository also contains a Power BI template that can be deployed alongside
 - Admin rights to the environment
 - Rights to create Power Automate flows using the Common Data Service connector.
 
-- A local copy of the [Accelerator](releases/Project_for_the_web_Accelerator_v1_7_0_3.zip). You don't need to unzip the solution file.
+- A local copy of the [Accelerator](https://github.com/BeReasonable/Project-Accelerator/raw/main/releases/Project_for_the_web_Accelerator_v1_7_0_3.zip). You don't need to unzip the solution file.
 
 ### Instructions
 
