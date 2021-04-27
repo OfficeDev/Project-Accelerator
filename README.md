@@ -26,7 +26,7 @@ This repository also contains a Power BI template that can be deployed alongside
 
 ---
 
-### [Here's the latest version of the Accelerator](prior_releases/Project_for_the_web_Accelerator%20v1_6_0_18.zip)
+### [Here's the latest version of the Accelerator](releases/Project_for_the_web_Accelerator_v1_7_0_3.zip)
 ### [Here's the latest version of the Power BI Template for the Accelerator](Project%20for%20the%20Web%20Accelerator%20report.pbit)
 
 ---
@@ -37,7 +37,7 @@ This repository also contains a Power BI template that can be deployed alongside
 | ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
 | `README.md`                                     | This README file.                                                                                           |
 | `LICENSE.md`                                    | Details about the MIT License for anyone looking to reuse code in this repository in their own applications |
-| `Project for the web Accelerator <version>.zip` | The Project for the web Accelerator                                                                         |
+| `releases`                                      | folder containing the Project for the web Accelerator                                                       |
 | `Project for the web template.pbit`             | Power BI template for use with the Accelerator                                                              |
 
 ---
@@ -50,7 +50,7 @@ This repository also contains a Power BI template that can be deployed alongside
 - Admin rights to the environment
 - Rights to create Power Automate flows using the Common Data Service connector.
 
-- A local copy of the [Accelerator](prior_releases/Project_for_the_web_Accelerator%20v1_6_0_18.zip). You don't need to unzip the solution file.
+- A local copy of the [Accelerator](releases/Project_for_the_web_Accelerator_v1_7_0_3.zip). You don't need to unzip the solution file.
 
 ### Instructions
 
