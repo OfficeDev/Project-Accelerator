@@ -146,17 +146,13 @@ Refer to the [Project Service Description](https://docs.microsoft.com/office365/
 
 ### Using the Accelerator without the Power BI content pack
 
-If you just deploy the Accelerator without the Power BI content pack, users will need the following licenses.
+Using all the customizations -except the reports- requires a **Project Plan 1** license. This applies to your project managers who also need to do things like organize programs, track issues and risks, manage the business case and financials, or edit the custom columns such as corporate sponsor of the project.
 
-Making full use of all the customizations requires a **Project Plan 3** license. This applies to your project managers who also need to do things like organize programs, track issues and risks, manage the business case and financials, or edit the custom columns such as corporate sponsor of the project.
-
-Users only need a **Project Plan 1 license** if they only need to manage tasks in the Task Tab and make changes to core project fields (Project Name, Project Owner, Estimated Start Date, and Calendar Template). These users have view rights to the rest of the fields and tables in the app.
-
-Users who don't need to make any changes to the project only need a **Microsoft 365 license**.
+Users who don't need to make any changes to the project and only need to view things like risks and issues need a **Microsoft 365 license**.
 
 ### Using the Accelerator with the Power BI content pack
 
-Users who need to view the Power BI reports in the Project Accelerator need a **Project Plan 3 as well as a Power BI license**.
+Users who need to view the Power BI reports in the Project Accelerator need a **Project Plan 1 as well as a Power BI license**.
 
 ### Using the Accelerator without using Project for the web
 
