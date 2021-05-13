@@ -152,7 +152,7 @@ Users who don't need to make any changes to the project and only need to view th
 
 ### Using the Accelerator with the Power BI content pack
 
-Users who need to view the Power BI reports in the Project Accelerator need a **Project Plan 1 as well as a Power BI license**.
+Users who need to view the Power BI reports in the Project Accelerator need an **M365 (or Project Plan 1 license) as well as a Power BI license**.
 
 ### Using the Accelerator without using Project for the web
 
