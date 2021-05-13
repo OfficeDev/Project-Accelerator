@@ -89,11 +89,11 @@ When you deploy the report, ensure that your team will have access to it. [Learn
 The Accelerator already contains a placeholder for the Power BI template. Once you've deployed the Accelerator and the Power BI template, follow these steps to have the Power BI report appear in the Accelerator.
 
 1. Once you've deployed the Power BI template, open the report in [PowerBI.com](https://www.powerbi.com).
-2. Press the _Share_ button in the top navigation bar, open the _Embed report_ menu item, and then choose the _Website or portal_ option.
+2. Press the _File_ button in the top navigation bar, open the _Embed report_ menu item, and then choose the _Website or portal_ option.
 
 ![The website or portal menu option under the share button](images/share-powerbi-report.png)
 
-1. Copy the link in the top box ("Here's a link you can use to embed content") and keep it handy.
+3. Copy the link in the top box ("Here's a link you can use to embed content") and keep it handy.
 
 ![Embed link](images/reports-link-code.png)
 
