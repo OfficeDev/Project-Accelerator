@@ -25,12 +25,12 @@ This repository also contains a Power BI template that can be deployed alongside
 
 ---
 
-### [Here's the latest version of the Accelerator](https://github.com/OfficeDev/Project-Accelerator/blob/main/releases/Project_for_the_web_Accelerator_v1_7_0_4.zip?raw=true)
-### [Here's the latest version of the Power BI Template for the Accelerator](https://github.com/OfficeDev/Project-Accelerator/blob/main/releases/Project_for_the_Web_Accelerator_report_v1.1?raw=true)
+### [Here's the latest version of the Accelerator](https://github.com/OfficeDev/Project-Accelerator/blob/main/releases/Project_for_the_web_Accelerator_1_7_0_4.zip?raw=true)
+### [Here's the latest version of the Power BI Template for the Accelerator](https://github.com/OfficeDev/Project-Accelerator/blob/main/releases/Project_for_the_Web_Accelerator_report_v1.1.pbit?raw=true)
 
 ---
 
-### Important Notes about the latest release (v 1.7.0.4)
+### Important Notes about the latest release of the Accelerator (1.7.0.4)
 
 This release of the Accelerator includes a Power Automate flow that converts _Project Requests_ in an _Approved_ state into projects. To disable this flow, follow the instructions located later in this guide.
 
@@ -40,8 +40,8 @@ This release of the Accelerator includes a Power Automate flow that converts _Pr
 | ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
 | `README.md`                                     | This README file.                                                                                           |
 | `LICENSE.md`                                    | Details about the MIT License for anyone looking to reuse code in this repository in their own applications |
-| `releases`                                      | folder containing the Project for the web Accelerator                                                       |
-| `Project for the web template.pbit`             | Power BI template for use with the Accelerator                                                              |
+| `releases`                                      | folder containing the Project for the web Accelerator and Power BI template                                                     |
+
 
 ---
 
@@ -74,7 +74,7 @@ The Project Power App in this environment will look similar to the screenshot be
 ## Converting a Project Request into a Project using Power Automate
 The Accelerator helps teams take their ideas and turn them into projects. This is possible because a Power Automate flow is included in the solution.
 
-To get started, create a new Project Request. New requests will be in a _New_ state. 
+To get started, create a new Project Request. All requests start of in a _New_ state. 
 
 ![Project request in a new state](images/new-state.png)
 
@@ -86,7 +86,7 @@ The flow included with the Accelerator is very simple: it creates a project from
 1. Look for the _When the request state is updated to Approved_ cloud flow
 ![Cloud Flow in the solution](images/cloud-flow-in-solution.png) 
 1. Click on the label to open the flow in flow.microsoft.com
-1. Edit the flow to support the workflows of the team
+1. Edit the flow to support the workflows of your team
 1. Save the Flow and close the browser tab
 1. In the Power Apps makers portal, press the _Publish all customizations- button to persist changes to the flow
 ![Publish customizations button](images/publish-customizations.png)
@@ -212,13 +212,13 @@ or this error in flow.microsoft.com
 ![Flow save failed with code OpenApiOperationParameterValidationFailed and message Input parameter item validation failed in workflow operation Create_a_new_record: The API operation 'CreateRecord' is missing required property item/msdyn_schedulemode.](images/flow-error.png)
 
 To resolve this, do the following.
-1. In the Project Accelerator solution, open the flow by clicking on the label of the _When a Request State is Updated..._ cloud flow. This will open the flow.microsoft.com editor.
+1. In the Project Accelerator solution, open the flow by clicking on the label of the cloud flow _When a Request State is Updated..._. This will open the flow.microsoft.com editor.
 ![Solution explorer](images/open-the-flow.png)
 1. Press the Edit flow button
 ![Edit flow button](images/edit-flow-button.png)
 1. Click the _Condition_ step to expand it
 ![Condition step](images/flow-condition.png)
-1. In the _If yes_ condition, expand the _Create a new record step_
+1. In the _If yes_ condition, expand the _Create a new record_ step.
 1. Choose a value for the _Scheduling Mode_ field. Set it to _Fixed Duration_ if you're unsure of which scheduling mode you want. Don't leave it blank. [Learn more about scheduling modes](https://techcommunity.microsoft.com/t5/project-support-blog/schedule-modes-and-task-and-resource-usage-in-project-for-the/ba-p/2656738).
 1. Press the save button to persist the changes
 1. Press the back arrow at the top of the flow editor
