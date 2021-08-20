@@ -11,7 +11,7 @@ languages:
 # Project for the web Accelerator
 The Project for the web Accelerator applies useful customizations to the Project for the web Power App. The Accelerator can _easily_ be deployed to any environment that has Project for the web already in it. Scenarios included in the Accelerator are...
 
-💡 **Project Requests**. Create a list of ideas for Projects that include a business case and expected impact. Pro-tip: Create an Approvals flow using Power Automate to convert Project Requests into Projects.
+💡 **Project Requests**. Create a list of ideas for Projects that include a business case and expected impact. The included Power Automate flow will create projects whenever the state of requests is set to _Approved_.
 
 💼 **Programs**. Create a heirarchy of programs and projects see how work fits into the bigger picture.
 
