@@ -9,7 +9,6 @@ languages:
 ---
 
 # Project for the web Accelerator
-
 The Project for the web Accelerator applies useful customizations to the Project for the web Power App. The Accelerator can _easily_ be deployed to any environment that has Project for the web already in it. Scenarios included in the Accelerator are...
 
 💡 **Project Requests**. Create a list of ideas for Projects that include a business case and expected impact. Pro-tip: Create an Approvals flow using Power Automate to convert Project Requests into Projects.
@@ -26,10 +25,14 @@ This repository also contains a Power BI template that can be deployed alongside
 
 ---
 
-### [Here's the latest version of the Accelerator](https://github.com/OfficeDev/Project-Accelerator/blob/main/releases/Project_for_the_web_Accelerator_v1_7_0_3.zip?raw=true)
-### [Here's the latest version of the Power BI Template for the Accelerator](https://github.com/OfficeDev/Project-Accelerator/blob/main/releases/Project_for_the_Web_Accelerator_report.pbit?raw=true)
+### [Here's the latest version of the Accelerator](https://github.com/OfficeDev/Project-Accelerator/blob/main/releases/Project_for_the_web_Accelerator_v1_7_0_4.zip?raw=true)
+### [Here's the latest version of the Power BI Template for the Accelerator](https://github.com/OfficeDev/Project-Accelerator/blob/main/releases/Project_for_the_Web_Accelerator_report_v1.1?raw=true)
 
 ---
+
+### Important Notes about the latest release (v 1.7.0.4)
+
+This release of the Accelerator includes a Power Automate flow that converts _Project Requests_ in an _Approved_ state into projects. To disable this flow, follow the instructions located later in this guide.
 
 ## Contents of this GitHub Repository
 
@@ -50,7 +53,7 @@ This repository also contains a Power BI template that can be deployed alongside
 - Admin rights to the environment
 - Rights to create Power Automate flows using the Common Data Service connector.
 
-- A local copy of the [Accelerator](https://github.com/OfficeDev/Project-Accelerator/blob/main/releases/Project_for_the_web_Accelerator_v1_7_0_3.zip?raw=true). You don't need to unzip the solution file.
+- A local copy of the [Accelerator](https://github.com/OfficeDev/Project-Accelerator/blob/main/releases/Project_for_the_web_Accelerator_v1_7_0_4.zip?raw=true). You don't need to unzip the solution file.
 
 ### Instructions
 
@@ -68,7 +71,36 @@ The Project Power App in this environment will look similar to the screenshot be
 
 ![Project Power App with Accelerator](images/project-with-the-accelerator.png)
 
-## Deploying the Power BI template
+## Converting a Project Request into a Project using Power Automate
+The Accelerator helps teams take their ideas and turn them into projects. This is possible because a Power Automate flow is included in the solution.
+
+To get started, create a new Project Request. New requests will be in a _New_ state. 
+
+![Project request in a new state](images/new-state.png)
+
+To create a project, change the state to _Approved_ and press the _Save_ button to save the record. In a few moments, a new project will appear in the list of projects.
+
+### Customizing the flow
+The flow included with the Accelerator is very simple: it creates a project from a request in an _Approved_ state. This can be customized to support scenarios such as including steps to send a notification to Teams. Customizing the flow starts in the Power Platform makers portal.
+1. Open the Project for the Web Accelerator solution in make.powerapps.com
+1. Look for the _When the request state is updated to Approved_ cloud flow
+![Cloud Flow in the solution](images/cloud-flow-in-solution.png) 
+1. Click on the label to open the flow in flow.microsoft.com
+1. Edit the flow to support the workflows of the team
+1. Save the Flow and close the browser tab
+1. In the Power Apps makers portal, press the _Publish all customizations- button to persist changes to the flow
+![Publish customizations button](images/publish-customizations.png)
+
+### Disabling the flow
+The flow can be disabled from within the solution explorer.
+Open the Project for the Web Accelerator solution in make.powerapps.com
+1. Look for the _When the request state is updated to Approved_ cloud flow 
+1. Press the "..." to open the menu for the flow
+1. Select the _Turn Off_ menu option
+1. At the top of the window, press the _Publish all customizations- button to persist changes to the flow
+![Turn off flow](images/disabling-the-flow.png)
+
+## Using the Power BI template
 
 ### Prerequisites
 
@@ -76,15 +108,15 @@ The Project Power App in this environment will look similar to the screenshot be
 - Admin rights to the environment
 - The appropriate privileges to deploy the Power BI content pack to powerbi.com.
 
-### Instructions to deploy the Power BI template
+### Deploy the Power BI template
 
-1. Download the [Power BI template](https://github.com/OfficeDev/Project-Accelerator/blob/main/releases/Project_for_the_Web_Accelerator_report.pbit?raw=true) for the Accelerator.
+1. Download the [Power BI template](https://github.com/OfficeDev/Project-Accelerator/blob/main/releases/Project_for_the_Web_Accelerator_report_v1.1?raw=true) for the Accelerator.
 2. Deploy it using Power BI Desktop or in the [PowerBI.com service](https://www.powerbi.com).
 3. When prompted for the environment url, use the base url of your environment. For example: `https://myenvironment.crm.dynamics.com`
 
 When you deploy the report, ensure that your team will have access to it. [Learn more about sharing in Power BI](https://docs.microsoft.com/power-bi/collaborate-share/service-share-dashboards).
 
-### Instructions to modify the Project Accelerator to use the deployed template
+### Modify the Project Accelerator to use the deployed template
 
 The Accelerator already contains a placeholder for the Power BI template. Once you've deployed the Accelerator and the Power BI template, follow these steps to have the Power BI report appear in the Accelerator.
 
@@ -169,3 +201,30 @@ For best experience to avoid any issues with subsequent releases of the Accelera
 ### Errors about Dependencies
 If you get an error (shown below) that you need a version of msdyn_ProjectServiceCore > 1.0.0.87, navigate to your list of solutions for your environment in [Power Apps](https://make.powerapps.com) and ensure that the latest version of the Project Service Core solution is installed. You'll see an "Update" option next to the solution name if there is an update available. After the update is complete, try installing the Accelerator package again.
 ![Power BI reports in the Project Power App](images/../dependency-error.png)
+
+### Unable to turn on the flow for converting Project Requests into Projects
+Some customers upgrading from an earlier version of the Accelerator may encounter one of these errors trying to turn on the flow.
+
+![Failed to activate component(s). Flow save failed with code OpenApiOperationParameterValidationFailed and message Input parameter item' validation failed in workflow operation...](images/maker-flow-error.png)
+
+or this error in flow.microsoft.com
+
+![Flow save failed with code OpenApiOperationParameterValidationFailed and message Input parameter item validation failed in workflow operation Create_a_new_record: The API operation 'CreateRecord' is missing required property item/msdyn_schedulemode.](images/flow-error.png)
+
+To resolve this, do the following.
+1. In the Project Accelerator solution, open the flow by clicking on the label of the _When a Request State is Updated..._ cloud flow. This will open the flow.microsoft.com editor.
+![Solution explorer](images/open-the-flow.png)
+1. Press the Edit flow button
+![Edit flow button](images/edit-flow-button.png)
+1. Click the _Condition_ step to expand it
+![Condition step](images/flow-condition.png)
+1. In the _If yes_ condition, expand the _Create a new record step_
+1. Choose a value for the _Scheduling Mode_ field. Set it to _Fixed Duration_ if you're unsure of which scheduling mode you want. Don't leave it blank. [Learn more about scheduling modes](https://techcommunity.microsoft.com/t5/project-support-blog/schedule-modes-and-task-and-resource-usage-in-project-for-the/ba-p/2656738).
+1. Press the save button to persist the changes
+1. Press the back arrow at the top of the flow editor
+![Back arrow](images/flow-back.png)
+1. Press the _Turn On_ button to enable the flow
+![Turn on](images/turn-on-flow.png)
+1. Close the browser tab to return to the Accelerator solution in make.powerapps.com
+1. Press the _Publish customizations_ button at the top to persist the changes.
+1. The flow should now work! To try it out, open a Project Request to the _Approved_ state and a project will be created
