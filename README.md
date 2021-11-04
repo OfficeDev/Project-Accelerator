@@ -25,7 +25,7 @@ This repository also contains a Power BI template that can be deployed alongside
 
 ---
 
-### [Here's the latest version of the Accelerator](https://github.com/OfficeDev/Project-Accelerator/blob/main/releases/Project_for_the_web_Accelerator_1_7_0_4.zip?raw=true)
+### [Here's the latest version of the Accelerator](https://github.com/OfficeDev/Project-Accelerator/blob/main/releases/Project_for_the_web_Accelerator_1_7_0_5.zip?raw=true)
 ### [Here's the latest version of the Power BI Template for the Accelerator](https://github.com/OfficeDev/Project-Accelerator/blob/main/releases/Project_for_the_Web_Accelerator_report_v1.1.pbit?raw=true)
 
 ---
