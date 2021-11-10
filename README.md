@@ -30,7 +30,7 @@ This repository also contains a Power BI template that can be deployed alongside
 
 ---
 
-### Important Notes about the latest release of the Accelerator (1.7.0.4)
+### Important Notes about the latest release of the Accelerator (1.7.0.5)
 
 This release of the Accelerator includes a Power Automate flow that converts _Project Requests_ in an _Approved_ state into projects. To disable this flow, follow the instructions located later in this guide.
 
@@ -53,7 +53,7 @@ This release of the Accelerator includes a Power Automate flow that converts _Pr
 - Admin rights to the environment
 - Rights to create Power Automate flows using the Common Data Service connector.
 
-- A local copy of the [Accelerator](https://github.com/OfficeDev/Project-Accelerator/blob/main/releases/Project_for_the_web_Accelerator_v1_7_0_4.zip?raw=true). You don't need to unzip the solution file.
+- A local copy of the [Accelerator](https://github.com/OfficeDev/Project-Accelerator/blob/main/releases/Project_for_the_web_Accelerator_v1_7_0_5.zip?raw=true). You don't need to unzip the solution file.
 
 ### Instructions
 
@@ -67,9 +67,17 @@ This release of the Accelerator includes a Power Automate flow that converts _Pr
 
 **Once this has been completed you're done deploying the solution!**
 
-The Project Power App in this environment will look similar to the screenshot below. If you want to make a change, you can deploy a managed solution with additional changes, or edit the Project Power App yourself in [PowerApps.com](https://make.powerapps.com).
+The Project Power App in this environment will look similar to the screenshot below. 
 
 ![Project Power App with Accelerator](images/project-with-the-accelerator.png)
+
+## Customizing the Accelerator
+
+Like the Project Power App, the Accelerator has been marked as “[managed](https://docs.microsoft.com/en-us/power-platform/alm/solution-concepts-alm)”, which means that changes directly to the Accelerator solution are not allowed. The environment needs to be customized directly or a solution is created which contain the customizations and layered on top of the accelerator (preferred). 
+
+The layering approach allows Microsoft to make future improvements and fixes to the Accelerator. Customers can deploy these changes as upgrades to their environment. Custom solutions can package up and deployed to multiple environments where the accelerator is deployed. To learn more about this process, please review [Application lifecycle management (ALM) with Microsoft Power Platform](https://docs.microsoft.com/en-us/power-platform/alm/). To get started on creating a custom solution, please review [Create a solution](https://docs.microsoft.com/en-us/powerapps/maker/data-platform/create-solution).
+
+
 
 ## Converting a Project Request into a Project using Power Automate
 The Accelerator helps teams take their ideas and turn them into projects. This is possible because a Power Automate flow is included in the solution.
