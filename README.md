@@ -140,16 +140,24 @@ The Report menu currently points at a webresource file containing HTML with inst
 3.	Select solutions -> the customized solution -> Edit
 4.	Select the Objects option
 5.	New -> Dashboard -> Power BI embedded
-6.	Give the report a named and choose the workspace/report and save
-7.	If not already added, add the site map
+
+![Add embedded report to solution](images/add-embedded-report.png)
+
+6.	Give the report a name and choose the workspace/report and save
+
+![Choose Power BI Report](images/choose_report.png)
+
+7.	If not already added, add the site map to the custom solution
 * Add existing -> more-> Site Map
 * Choose Project – msdyn_ProjectServiceCore 
 * Click add
-8.	Select the site map and click edit
-9.	Select the Reports option under Reporting
+10.	Select the site map and click edit
+11.	Select the Reports option under Reporting
 * Select Type = Dashboard
 * Default Dashboard = choose the report from the drop down
 * Save and close
+
+![Set Sitemap embedded report](images/new-embedded-report-site-map.png)
 10.	Click Publish
 11.	Go back to the Project app and click Report
 12.	The report will now show up along other reports in the environment
@@ -174,9 +182,12 @@ The Accelerator already contains a placeholder for the Power BI template. Once y
 7.	Select the Objects option
 8.	New -> more -> Web resource 
 9.	Set
-1.	Display Name: Accelerator Power BI report
-2.	Name: Accelerator_report
-3.	Type: Webpage HTML
+*	Display Name: Accelerator Power BI report
+* Name: Accelerator_report
+* Type: Webpage HTML
+
+
+
 10.	Create a new html file to upload with the follow text. Update the “REPLACE THIS” with the embedded string copied earlie
 
 ```
@@ -190,7 +201,7 @@ The Accelerator already contains a placeholder for the Power BI template. Once y
 ```
 
 11.	Press OK to save the changes and close the dialog.
-12.	If not already added, add the site map
+12.	If not already added, add the site map to the custom solution
 * Add existing -> more-> Site Map
 * Choose Project – msdyn_ProjectServiceCore 
 * Click add
@@ -198,6 +209,9 @@ The Accelerator already contains a placeholder for the Power BI template. Once y
 14.	Select the Reports option under Reporting
 * Select Type = Web Resource
 * URL = Accelerator Power BI report
+
+![Set Sitemap web resource](images/set-report-web-resource-site-map.png)
+
 * Save and close
 15.	Click Publish
 16.	Go back to the Project app and click Report
