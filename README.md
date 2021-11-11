@@ -131,7 +131,7 @@ When you deploy the report, ensure that your team will have access to it. [Learn
 1.	Power BI report has been deployed to PowerBI.com
 2.	A customized solution has been created to include the changes. To create a solution please review [Create a solution](https://docs.microsoft.com/en-us/powerapps/maker/data-platform/create-solution).
 
-The Report menu currently points at a webresource file containing HTML with instructions on how to get the Power BI Template with the Accelerator. Since the websource is managed, it cannot be edited. There are two options to have the report bring up the Power BI report
+The Report menu currently points at a web resource file containing HTML with instructions on how to get the Power BI Template with the Accelerator. Since the Accelerator is managed, the web resource cannot be edited. There are two options to have the report bring up the Power BI report:
 
 #### Updating the report menu via Power BI embedded report
 
