@@ -80,7 +80,7 @@ To create a project, change the state to _Approved_ and press the _Save_ button 
 
 ### Customizing the flow
 The flow included with the Accelerator is very simple: it creates a project from a request in an _Approved_ state. This can be customized to support scenarios such as including steps to send a notification to Teams. Customizing the flow starts in the Power Platform makers portal.
-1. Open the Project for the Web Accelerator solution in make.powerapps.com
+1. Open the Project for the Web Accelerator solution in [Power Apps](https://make.powerapps.com)
 1. Look for the _When the request state is updated to Approved_ cloud flow
 ![Cloud Flow in the solution](images/cloud-flow-in-solution.png) 
 1. Click on the label to open the flow in flow.microsoft.com
@@ -91,7 +91,7 @@ The flow included with the Accelerator is very simple: it creates a project from
 
 ### Disabling the flow
 The flow can be disabled from within the solution explorer.
-Open the Project for the Web Accelerator solution in make.powerapps.com
+Open the Project for the Web Accelerator solution in [Power Apps](https://make.powerapps.com)
 1. Look for the _When the request state is updated to Approved_ cloud flow 
 1. Press the "..." to open the menu for the flow
 1. Select the _Turn Off_ menu option
@@ -125,7 +125,7 @@ The Report menu currently points at a web resource file containing HTML with ins
 
 #### Updating the report menu via Power BI embedded report
 
-1.	Sign into powerapps.com 
+1.	Sign into [powerapps.com](https://make.powerapps.com)
 2.	Select the environment containing the Accelerator
 3.	Select solutions -> the customized solution -> Edit
 4.	Select the Objects option
@@ -148,6 +148,7 @@ The Report menu currently points at a web resource file containing HTML with ins
 * Save and close
 
 ![Set Sitemap embedded report](images/new-embedded-report-site-map.png)
+
 10.	Click Publish
 11.	Go back to the Project app and click Report
 12.	The report will now show up along other reports in the environment
@@ -166,7 +167,7 @@ The Accelerator already contains a placeholder for the Power BI template. Once y
 
 ![Embed link](images/reports-link-code.png)
 
-4.	Sign into powerapps.com 
+4.	Sign into [Power Apps](https://make.powerapps.com)
 5.	Select the environment containing the Accelerator
 6.	Select solutions -> the customized solution -> Edit
 7.	Select the Objects option
@@ -206,10 +207,6 @@ The Accelerator already contains a placeholder for the Power BI template. Once y
 15.	Click Publish
 16.	Go back to the Project app and click Report
 17.	The report will now show up taking up the entire section
-
-![Save and Publish buttons](images/save-changes-for-reports.png)
-
-**You can now view the Power BI report within the Accelerator! Just open the Reports link in the left navigation of the Project Power App**
 
 ![Power BI reports in the Project Power App](images/powerbi-in-app.png)
 
