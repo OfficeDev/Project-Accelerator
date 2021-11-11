@@ -1,13 +1,3 @@
----
-page_type: sample
-products:
-  - office-project
-description: An Accelerator solution for Project for the web
-languages:
-  - powerapps
-  - Power BI
----
-
 # Project for the web Accelerator
 The Project for the web Accelerator applies useful customizations to the Project for the web Power App. The Accelerator can _easily_ be deployed to any environment that has Project for the web already in it. Scenarios included in the Accelerator are...
 
