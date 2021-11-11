@@ -124,6 +124,37 @@ Open the Project for the Web Accelerator solution in make.powerapps.com
 
 When you deploy the report, ensure that your team will have access to it. [Learn more about sharing in Power BI](https://docs.microsoft.com/power-bi/collaborate-share/service-share-dashboards).
 
+### Modify the Project Accelerator – Reports menu to use the deployed template or any Power BI report
+
+#### Prerequisites
+
+1.	Power BI report has been deployed to PowerBI.com
+2.	A customized solution has been created to include the changes. To create a solution please review [Create a solution](https://docs.microsoft.com/en-us/powerapps/maker/data-platform/create-solution).
+
+The Report menu currently points at a webresource file containing HTML with instructions on how to get the Power BI Template with the Accelerator. Since the websource is managed, it cannot be edited. There are two options to have the report bring up the Power BI report
+
+#### Updating the report menu via Power BI embedded report
+
+1.	Sign into powerapps.com 
+2.	Select the environment containing the Accelerator
+3.	Select solutions -> the customized solution -> Edit
+4.	Select the Objects option
+5.	New -> Dashboard -> Power BI embedded
+6.	Give the report a named and choose the workspace/report and save
+7.	If not already added, add the site map
+* Add existing -> more-> Site Map
+* Choose Project – msdyn_ProjectServiceCore 
+* Click add
+8.	Select the site map and click edit
+9.	Select the Reports option under Reporting
+* Select Type = Dashboard
+* Default Dashboard = choose the report from the drop down
+* Save and close
+10.	Click Publish
+11.	Go back to the Project app and click Report
+12.	The report will now show up along other reports in the environment
+
+
 ### Modify the Project Accelerator to use the deployed template
 
 The Accelerator already contains a placeholder for the Power BI template. Once you've deployed the Accelerator and the Power BI template, follow these steps to have the Power BI report appear in the Accelerator.
