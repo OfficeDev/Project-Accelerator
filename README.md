@@ -160,38 +160,28 @@ The Report menu currently points at a webresource file containing HTML with inst
 The Accelerator already contains a placeholder for the Power BI template. Once you've deployed the Accelerator and the Power BI template, follow these steps to have the Power BI report appear in the Accelerator.
 
 1. Once you've deployed the Power BI template, open the report in [PowerBI.com](https://www.powerbi.com).
-2. Press the _Share_ button in the top navigation bar, open the _Embed report_ menu item, and then choose the _Website or portal_ option.
+2. Press the file -> Embed Report -> Website or portal
 
 ![The website or portal menu option under the share button](images/share-powerbi-report.png)
 
-1. Copy the link in the top box ("Here's a link you can use to embed content") and keep it handy.
+3.	Copy the link in the top box ("Here's a link you can use to embed content") and keep it handy.
 
 ![Embed link](images/reports-link-code.png)
 
-4. In a new browser tab, sign into [powerapps.com](https://make.powerapps.com).
-5. In the top header, open the _Environment_ menu and select the environment you have the Project solution installed in.
-6. On the left navigation, click the _Solutions_ menu item.
-7. Click the _Project for the web Accelerator_ solution name to open the solution.
-
-![Project for the web Accelerator solution](images/solution-title.png)
-
-8. Click the _Reports_ item. It has the name _proj_Reports_ and is of type _Customization.Type_WebResource_.
-
-![Reports item in the solution](images/reports-item.png)
-
-9. In the new tab that opens, click the _Text Editor_ button in the _Content_ section of the page.
-
-![Reports text editor](images/reports-text-editor.png)
-
-10. Switch to the _Source_ tab in the dialog that appears.
-
-![Source Tab](images/source-tab-button.png)
-
-11. Delete the all the content in that text box and paste in the code snipped below. Replace the text between quotes `REPLACE THIS` with the link from step 3 that you created in the PowerBI.com site. Be sure to keep the quotes!
+4.	Sign into powerapps.com 
+5.	Select the environment containing the Accelerator
+6.	Select solutions -> the customized solution -> Edit
+7.	Select the Objects option
+8.	New -> more -> Web resource 
+9.	Set
+1.	Display Name: Accelerator Power BI report
+2.	Name: Accelerator_report
+3.	Type: Webpage HTML
+10.	Create a new html file to upload with the follow text. Update the “REPLACE THIS” with the embedded string copied earlie
 
 ```
   <html>
-    <head>
+  <head>
     </head>
     <body onfocusout="parent.setEmailRange();" style="overflow-wrap: break-word;">
       <iframe width="100%" height="100%" src="REPLACE THIS" frameborder="0" allowfullscreen="true"></iframe>
@@ -199,8 +189,19 @@ The Accelerator already contains a placeholder for the Power BI template. Once y
   </html>
 ```
 
-1.  Press _OK_ to save the changes and close the dialog.
-2.  Press the _Save_ button and then the _Publish all customizations_ button to have the changes made. Once published, you can close the browser tabs.
+11.	Press OK to save the changes and close the dialog.
+12.	If not already added, add the site map
+* Add existing -> more-> Site Map
+* Choose Project – msdyn_ProjectServiceCore 
+* Click add
+13.	Select the site map and click edit
+14.	Select the Reports option under Reporting
+* Select Type = Web Resource
+* URL = Accelerator Power BI report
+* Save and close
+15.	Click Publish
+16.	Go back to the Project app and click Report
+17.	The report will now show up taking up the entire section
 
 ![Save and Publish buttons](images/save-changes-for-reports.png)
 
