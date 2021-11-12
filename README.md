@@ -153,8 +153,9 @@ The Report menu currently points at a web resource file containing HTML with ins
 11.	Go back to the Project app and click Report
 12.	The report will now show up along other reports in the environment
 
+![Power BI reports in the Project Power App](images/powerbi-in-app-dashboard.png)
 
-### Modify the Project Accelerator to use the deployed template
+#### Updating the report menu via Web resource (full frame)
 
 The Accelerator already contains a placeholder for the Power BI template. Once you've deployed the Accelerator and the Power BI template, follow these steps to have the Power BI report appear in the Accelerator.
 
