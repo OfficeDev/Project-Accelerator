@@ -108,7 +108,7 @@ Open the Project for the Web Accelerator solution in [Power Apps](https://make.p
 
 ### Deploy the Power BI template
 
-1. Download the [Power BI template](https://github.com/OfficeDev/Project-Accelerator/blob/main/releases/Project_for_the_Web_Accelerator_report_v1.1?raw=true) for the Accelerator.
+1. Download the [Power BI template](https://github.com/OfficeDev/Project-Accelerator/blob/main/releases/Project_for_the_Web_Accelerator_report_v1.1.pbit?raw=true) for the Accelerator.
 2. Deploy it using Power BI Desktop or in the [PowerBI.com service](https://www.powerbi.com).
 3. When prompted for the environment url, use the base url of your environment. For example: `https://myenvironment.crm.dynamics.com`
 
